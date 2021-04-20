@@ -24,7 +24,7 @@ body {
     border-radius: 35px;
     box-shadow: 0 20px 20px 0 rgba(253, 210, 109, 0.8);
     display: flex;
-    padding: 50px 100px;
+    padding: 50px 20px;
     margin: 50px 0;
     position: relative;
     z-index: 10;
@@ -76,5 +76,18 @@ body {
     z-index: 1;
 }
 .action-button {
-    
+    background-color: rgb(243, 141, 192);
+    border: 0;
+    color: rgb(253, 210, 109);
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin: 5px 10px;
+}
+.action-button:focus {
+    outline: 0;
+}
+.action-button-big {
+    color:#ffc107;
+    font-size: 25px;
 }
