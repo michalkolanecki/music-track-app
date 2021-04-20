@@ -10,7 +10,7 @@ body {
     font-family: 'Lato', sans-serif;
     background-image: linear-gradient(
         0deg, 
-        rgb(236, 186, 162) 23.8%,
+        rgb(217, 241, 149) 23.8%,
         rgb(253, 210, 109) 92%
     );
     display: flex;
@@ -20,5 +20,61 @@ body {
 }
 
 .player-container {
-    background-color: aqua;
+    background-color: rgb(243, 141, 192);
+    border-radius: 35px;
+    box-shadow: 0 20px 20px 0 rgba(253, 210, 109, 0.8);
+    display: flex;
+    padding: 50px 100px;
+    margin: 50px 0;
+    position: relative;
+    z-index: 10;
+}
+.cover-container {
+    position: relative;
+    width: 130px;
+}
+.cover-container::after {
+    content: "";
+    background-color: #FFF;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.cover-container img {
+    width: inherit;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+.player-container.play .cover-container img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.action-button {
+    
 }
