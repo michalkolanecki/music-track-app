@@ -24,8 +24,8 @@ body {
     border-radius: 35px;
     box-shadow: 0 20px 20px 0 rgba(253, 210, 109, 0.8);
     display: flex;
-    padding: 50px 20px;
-    margin: 50px 0;
+    padding: 50px 60px;
+    margin: 150px 0;
     position: relative;
     z-index: 10;
 }
@@ -90,4 +90,39 @@ body {
 .action-button-big {
     color:#ffc107;
     font-size: 25px;
+}
+.player-info {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: calc(100% - 60px);
+    opacity: 0;
+    padding: 30px 10px 30px 180px;
+    transform: translateY(0%);
+    transition: transform 0.5s "ease-in" opacity 0.5s "ease-in";
+}
+.player-info h4 {
+    margin: 0;
+}
+.player-container.play .player-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.progress-container {
+    background: #FFF;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 3px;
+    width: 100%;
+}
+.progress {
+    background-color: lightcoral;
+    border-radius: 10px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
 }
