@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
 * {
     box-sizing: border-box;
 }
-
 body {
     height: 100vh;
     margin: 0;
@@ -18,7 +16,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .player-container {
     background-color: rgb(243, 141, 192);
     border-radius: 35px;
@@ -52,14 +49,12 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-
     animation: rotate 3s linear infinite;
     animation-play-state: paused;
 }
 .player-container.play .cover-container img {
     animation-play-state: running;
 }
-
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -68,7 +63,6 @@ body {
         transform: rotate(360deg);
     }
 }
-
 .navigation {
     display: flex;
     align-items: center;
@@ -110,7 +104,6 @@ body {
     opacity: 1;
     transform: translateY(-100%);
 }
-
 .progress-container {
     background: #FFF;
     border-radius: 10px;
