@@ -1,4 +1,4 @@
-﻿# music-track-app
+## Music-track-app
 
 Simple music app using HTML, CSS and JavaScript.
 
