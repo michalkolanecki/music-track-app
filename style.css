@@ -16,8 +16,13 @@ body {
     align-items: center;
     justify-content: center;
 }
+h1 {
+    font-size: 55px;
+    margin: 0 auto;
+    color: #3d3919;
+}
 .player-container {
-    background-color: rgb(243, 141, 192);
+    background-color: rgb(232, 230, 231);
     border-radius: 35px;
     box-shadow: 0 20px 20px 0 rgba(253, 210, 109, 0.8);
     display: flex;
@@ -25,6 +30,7 @@ body {
     margin: 150px 0;
     position: relative;
     z-index: 10;
+    border: 2px solid #3d3919;
 }
 .cover-container {
     position: relative;
@@ -70,13 +76,14 @@ body {
     z-index: 1;
 }
 .action-button {
-    background-color: rgb(243, 141, 192);
+    background-color: rgb(28, 28, 28);
     border: 0;
     color: rgb(253, 210, 109);
     font-size: 15px;
     cursor: pointer;
     padding: 5px 15px;
     margin: 5px 10px;
+    border-radius: 10px;
 }
 .action-button:focus {
     outline: 0;
